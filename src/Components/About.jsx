@@ -6,7 +6,7 @@ const About = () => {
   return (
   <div id="About Me">
     <div className='App-header'>
-        <p>About</p>
+        <p>About Me</p>
       </div>
   </div>
   );
