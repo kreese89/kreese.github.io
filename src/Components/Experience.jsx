@@ -61,10 +61,11 @@ const Experience = () => {
                     </ListItem>
                   </List>
                 </Typography>
-              </CardContent>
-              <Typography>
+                <Typography >
                 Geneva's public build is completely open-source and readily available.
               </Typography>
+              </CardContent>
+              
             </Card>
           </Grid>
           <Grid item xs={6}>
