@@ -38,7 +38,7 @@ const Projects = () => {
         <Grid container spacing={1} direction="row" justifyContent="center">
             {projects.map(project => (
               <Grid item xs={6}>
-                <Card variant="outlined" raised style={{display: 'inline-block', height: '200px', overflow: 'auto'}}>
+                <Card variant="elevation" raised style={{display: 'inline-block', height: '200px', overflow: 'auto'}}>
                   <CardHeader 
                     title={
                     <Typography variant="h6">{project.name}</Typography>

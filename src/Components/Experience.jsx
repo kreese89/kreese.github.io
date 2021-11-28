@@ -12,11 +12,10 @@ const Experience = () => {
           Experience
         </Typography>
       </Box>
-      <Box sx={{marginLeft: '5%', marginTop: '1%'}}>
+      <Box sx={{marginLeft: '2%', marginRight: '2%', marginTop: '1%'}}>
         <Grid container spacing={1}>
-          <Grid item xs={6}>
-            <Card variant="elevation" raised style={{overflow: 'auto', display: 'inline-block', minWidth: '50%'}}>
-              <CardHeader 
+          <Grid item xs component={Card}>
+              <CardHeader     
                 title={
                   <Typography variant="h1">
                     Geneva
@@ -39,7 +38,7 @@ const Experience = () => {
                 </Typography>
                 <Typography>
                   At Geneva, we've: 
-                  <List dense style={{marginLeft: '2%', marginTop: '-1%', marginBottom: '-1%'}}>
+                  <List dense style={{ marginTop: '-1%', marginBottom: '-1%'}}>
                     <ListItem disablePadding>
                       <ListItemIcon>
                         <ArrowIcon />
@@ -66,19 +65,35 @@ const Experience = () => {
               </Typography>
               </CardContent>
               
-            </Card>
           </Grid>
-          <Grid item xs={6}>
-            <Card variant="elevation" raised style={{overflow: 'auto', display: 'inline-block', minWidth: '50%'}}>
+          <Grid item xs component={Card}>
               <CardHeader 
                 title={
                   <Typography variant="h1">
                     Accenture
                   </Typography> 
-                }/>
-              <CardContent>
+                }
+                subheader={
+                  <Typography variant="subtitle1">
+                    January 2021 - Present
+                  </Typography>
+                }  
+              />
+              <CardContent style={{marginTop: '-3%'}}>
+                <Typography>
+                  Currently working as a Full-Stack Software Engineer at Accenture. While here I've been staffed on 
+                  the Facebook project, where me and a team of other Facebook/Accenture SWE's have worked on building out
+                  an internal portal designed for Facebook's thousands of global vendors to centralize the tooling, communcations,
+                  and resources that they may need. Worked in the classic Facebook tech stack, utilizng Javascript + React on 
+                  the frontend, Hack on the backend, and GraphQL to construct our API (with Relay as our client)
+                </Typography>
+                <Typography>
+                  I also interned with Accenture twice: first as a Consulting Summer Analyst (where I helped direct several 
+                  in-flight digital projects and conducted and communicated a data analysis on the efficiency of the client's
+                  completion of projects), and second as a Technology Summer Analyst (where I assisted the client in 
+                  the health and maintenance of their web application and participated in the Accenture Technology Hackathon)
+                </Typography>
               </CardContent>
-            </Card>
           </Grid>
         </Grid>
       </Box>
