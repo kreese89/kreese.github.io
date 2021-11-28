@@ -21,7 +21,7 @@ const About = () => {
           </Grid>
           <Grid item xs={6}>
           <Box>
-            <Typography variant="h3">
+            <Typography variant="h3" style={{marginTop: '15px'}}>
               Kyle Reese  
             </Typography>
             <Typography variant="h6" style={{marginTop: '15px'}}>
@@ -30,14 +30,13 @@ const About = () => {
               the UMD, where I studied Math and Computer Science.
             </Typography>
             <Typography variant="h6" style={{marginTop: '15px'}}>
-              {"I'm interested in a variety of domains and tech stacks. "}
+              I'm interested in Systems + Networks (and their security), OS, PL, and ML. {' '} 
               {<Link onClick={handleClick}>{"Previously"}</Link>} I've studied defeating network-level internet censorship
-              using genetic algorithms. I'm interested in Systems + Networks (and their security), OS, PL, and ML. 
+              using genetic algorithms. 
               Recently I've been working on a productivity platform designed to connect motivated creators, builders, artists, and investors.
-              More to come!
             </Typography>
             <Typography variant="h6" style={{marginTop: '15px'}}>
-              When I'm not sitting at a computer I like to go to the gym, read, and play competitive Super Smash Brothers Melee.
+              When I'm not sitting at a computer I like to go to the gym, read, and play Super Smash Bros Melee competitively.
             </Typography>
           </Box>
           </Grid>
