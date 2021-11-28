@@ -7,7 +7,6 @@ import {
   Menu, 
   Container, 
   Button, 
-  ButtonGroup,
   MenuItem 
 } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
