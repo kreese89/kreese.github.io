@@ -18,7 +18,7 @@ const Navbar = () => {
   const sections = ['About Me', 'Experience', 'Projects'];
 
   return (
-    <AppBar position="sticky" >
+    <AppBar position="sticky" color="default">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -39,7 +39,7 @@ const Navbar = () => {
             >
               {sections.map((section) => (
                 <MenuItem key={section} onClick={() => console.log(section)}>
-                  <Typography textAlign="center" variant="h6" color="textPrimary">{section}</Typography>
+                  <Typography textAlign="center" variant="h5">{section}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -52,7 +52,7 @@ const Navbar = () => {
                   onClick={() => {console.log(section)}}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
-                  <Typography variant="h6" color="inherit">
+                  <Typography variant="h5">
                   {section}
                   </Typography>
                 </Button>

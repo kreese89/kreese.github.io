@@ -25,7 +25,7 @@ const Projects = () => {
   }
 
   return (
-    <div className='App-header' id="Projects">
+    <div className='section' id="Projects">
       <Box style={{'justifyContent': 'center'}}>
         <Typography variant="h3">
           Projects
