@@ -77,7 +77,6 @@ const Experience = () => {
                   </Typography> 
                 }/>
               <CardContent>
-                Hello
               </CardContent>
             </Card>
           </Grid>
