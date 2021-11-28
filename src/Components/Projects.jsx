@@ -26,8 +26,8 @@ const Projects = () => {
 
   return (
     <div className='section' id="Projects">
-      <Box style={{justifyContent: 'center', width: '50%'}}>
-        <Typography variant="h4">
+      <Box style={{justifyContent: 'center', width: '50%', marginTop: '5%'}}>
+        <Typography variant="h3">
           Projects
         </Typography>
         <Typography variant="h6">
