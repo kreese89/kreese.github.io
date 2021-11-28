@@ -1,13 +1,11 @@
 import * as React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import Navbar from './Components/Navbar';
 import About from './Components/About';
 import Experience from './Components/Experience';
 import Projects from './Components/Projects';
+import './App.css';
 
 const App = () => {
-  // return <Navbar />;
   return (
     <>
       <Navbar />

@@ -2,7 +2,7 @@ import * as React from 'react';
 import '../App.css';
 
 const Experience = () => {
-return <div className='App-header' id="Experience">
+return <div id="Experience" className="App-header">
         <p>Experience</p>
       </div>;
 }
