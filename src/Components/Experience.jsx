@@ -84,7 +84,7 @@ const Experience = () => {
                   Currently working as a Full-Stack Software Engineer at Accenture. While here I've been staffed on 
                   the Facebook project, where me and a team of other Facebook/Accenture SWE's have worked on building out
                   an internal portal designed for Facebook's thousands of global vendors to centralize the tooling, communcations,
-                  and resources that they may need. Worked in the classic Facebook tech stack, utilizng Javascript + React on 
+                  and resources that they may need. Worked in the classic Facebook tech stack, utilizng Javascript and React on 
                   the frontend, Hack on the backend, and GraphQL to construct our API (with Relay as our client)
                 </Typography>
                 <Typography>
