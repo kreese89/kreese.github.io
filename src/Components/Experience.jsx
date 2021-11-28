@@ -3,7 +3,7 @@ import '../App.css';
 
 const Experience = () => {
 return <div id="Experience" className="section">
-        <p>Coming soon!</p>
+        <p>Stay tuned!</p>
       </div>;
 }
 

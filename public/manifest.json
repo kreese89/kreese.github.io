@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "kreese-website",
+  "name": "Kyle Reese's personal website",
   "icons": [
     {
       "src": "favicon.ico",

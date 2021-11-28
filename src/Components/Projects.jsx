@@ -31,7 +31,7 @@ const Projects = () => {
           Projects
         </Typography>
         <Typography variant="h6">
-          Below are some of the projects I've worked on and thing's I've made. Check them out!
+          Below are some of the projects I've worked on and things I've made. Check them out!
         </Typography>
       </Box>
       <Box style={{marginTop: '10px', width: '50%'}}>

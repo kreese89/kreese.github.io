@@ -16,7 +16,7 @@ const About = () => {
         <Grid container>
           <Grid item xs={6}>
             <Box>
-              <img src={headshot} alt="Me!" style={{width: '450px', height: 'auto'}}/>
+              <img src={headshot} alt="Me!" style={{width: '480px', height: 'auto'}}/>
             </Box>
           </Grid>
           <Grid item xs={6}>
@@ -32,7 +32,9 @@ const About = () => {
             <Typography variant="h6" style={{marginTop: '15px'}}>
               {"I'm interested in a variety of domains and tech stacks. "}
               {<Link onClick={handleClick}>{"Previously"}</Link>} I've studied defeating network-level internet censorship
-              using genetic algorithms. Recently I've been working on a productivity platform designed to facilitate collaboration and communication between like-minded individuals. More to come!
+              using genetic algorithms. I'm interested in Systems + Networks (and their security), OS, PL, and ML. 
+              Recently I've been working on a productivity platform designed to connect motivated creators, builders, artists, and investors.
+              More to come!
             </Typography>
             <Typography variant="h6" style={{marginTop: '15px'}}>
               When I'm not sitting at a computer I like to go to the gym, read, and play competitive Super Smash Brothers Melee.
