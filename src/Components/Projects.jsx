@@ -2,12 +2,12 @@ import * as React from 'react';
 import '../App.css';
 import { Octokit } from 'octokit';
 import { useState, useEffect } from 'react';
-import { Grid } from "@material-ui/core";
+import { Box, Grid, Card, CircularProgress, CardHeader, CardContent, Typography } from "@material-ui/core";
 
 
 const Projects = () => {
   const oc = new Octokit();
-  const [projects, setProjects] = useState();
+  const [projects, setProjects] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -19,9 +19,30 @@ const Projects = () => {
     fetchData();
   }, []);
   
+  if (projects == null) {
+    return <CircularProgress />;
+  }
+
   return (
   <div className='App-header' id="Projects">
-        <p>Projects</p>
+    <Box style={{width: '50%'}}>
+      <Grid container spacing={1} style={{'margin-left': 'auto' }}>
+          {projects.map(project => (
+            <Grid >
+              <Card variant="outlined" raised style={{display: 'inline-block', width: '75px'}}>
+                <CardHeader>
+                  {project.name}
+                </CardHeader>
+                <CardContent>
+                  <Typography>
+                    {project.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+      </Grid>
+   </Box>
   </div>);
 }
 
