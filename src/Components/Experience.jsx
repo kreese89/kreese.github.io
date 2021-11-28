@@ -18,11 +18,11 @@ const Experience = () => {
               <CardHeader     
                 title={
                   <Typography variant="h1">
-                    Geneva
+                    <Link href="https://geneva.cs.umd.edu/"> Geneva </Link>
                   </Typography>
                 }
                 subheader={
-                   <Link href="https://geneva.cs.umd.edu/">censorship.ai</Link>
+                   <Typography variant="subtitle2"> October 2019 - Present </Typography>
                 }
                 action={
                   <Button href="https://github.com/kkevsterrr/geneva">
