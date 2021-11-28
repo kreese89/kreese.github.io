@@ -1,23 +1,25 @@
 import * as React from 'react';
-import { AppBar, 
+import { 
+  AppBar, 
   Box, 
   Toolbar, 
-  IconButton, 
   Typography, 
   Menu, 
   Container, 
-  Avater, 
   Button, 
-  Tooltip, 
+  ButtonGroup,
   MenuItem 
 } from '@material-ui/core';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const sections = ['About Me', 'Experience', 'Projects'];
 
   return (
-    <AppBar position="fixed" >
+    <AppBar position="sticky" >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -57,6 +59,17 @@ const Navbar = () => {
                 </Button>
               </Link>
             ))}
+          </Box>
+          <Box transformOrigin={{vertical: 'top', horizonal: 'right'}}>
+            <Button href="https://github.com/kreese89">
+              <GitHubIcon />
+            </Button>
+            <Button href="https://www.linkedin.com/in/kylepreese/" >
+              <LinkedInIcon />
+            </Button>
+            <Button href="https://twitter.com/KReese89">
+              <TwitterIcon />
+            </Button>
           </Box>
         </Toolbar>
       </Container>

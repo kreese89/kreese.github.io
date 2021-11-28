@@ -2,7 +2,8 @@ import * as React from 'react';
 import '../App.css';
 import { Octokit } from 'octokit';
 import { useState, useEffect } from 'react';
-import { Box, Grid, Card, CircularProgress, CardHeader, CardContent, Typography } from "@material-ui/core";
+import { Box, Button, Grid, Card, CircularProgress, CardHeader, CardContent, Typography } from "@material-ui/core";
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 
 const Projects = () => {
@@ -24,26 +25,44 @@ const Projects = () => {
   }
 
   return (
-  <div className='App-header' id="Projects">
-    <Box style={{width: '50%'}}>
-      <Grid container spacing={1} style={{'margin-left': 'auto' }}>
-          {projects.map(project => (
-            <Grid >
-              <Card variant="outlined" raised style={{display: 'inline-block', width: '75px'}}>
-                <CardHeader>
-                  {project.name}
-                </CardHeader>
-                <CardContent>
-                  <Typography>
-                    {project.description}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
-      </Grid>
-   </Box>
-  </div>);
+    <div className='App-header' id="Projects">
+      <Box style={{'justifyContent': 'center'}}>
+        <Typography variant="h3">
+          Projects
+        </Typography>
+        <Typography variant="h6">
+          Below are some of the projects I've worked on and thing's I've made. Check them out!
+        </Typography>
+      </Box>
+      <Box style={{'margin-top': '5%'}}>
+        <Grid container spacing={1} direction="row" justifyContent="center">
+            {projects.map(project => (
+              <Grid item xs={4}>
+                <Card variant="outlined" raised style={{display: 'inline-block', height: '200px', overflow: 'auto'}}>
+                  <CardHeader 
+                    title={
+                    <Typography variant="h6">{project.name}</Typography>
+                    } 
+                    subheader={
+                      <Typography variant="caption" color="textSecondary">{project.topics.join(', ')}</Typography>
+                    }
+                    action={
+                      <Button href={project.html_url}>
+                        <GitHubIcon />
+                      </Button>
+                    }
+                  />
+                  <CardContent>
+                    <Typography variant="body2">
+                      {project.description}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+        </Grid>
+      </Box>
+    </div>);
 }
 
 export default Projects;
