@@ -26,18 +26,18 @@ const Projects = () => {
 
   return (
     <div className='section' id="Projects">
-      <Box style={{'justifyContent': 'center'}}>
-        <Typography variant="h3">
+      <Box style={{justifyContent: 'center', width: '50%'}}>
+        <Typography variant="h4">
           Projects
         </Typography>
         <Typography variant="h6">
           Below are some of the projects I've worked on and thing's I've made. Check them out!
         </Typography>
       </Box>
-      <Box style={{'margin-top': '5%'}}>
+      <Box style={{marginTop: '10px', width: '50%'}}>
         <Grid container spacing={1} direction="row" justifyContent="center">
             {projects.map(project => (
-              <Grid item xs={4}>
+              <Grid item xs={6}>
                 <Card variant="outlined" raised style={{display: 'inline-block', height: '200px', overflow: 'auto'}}>
                   <CardHeader 
                     title={
