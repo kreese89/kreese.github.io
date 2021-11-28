@@ -22,7 +22,7 @@ const Experience = () => {
                   </Typography>
                 }
                 subheader={
-                   <Typography variant="subtitle2"> October 2019 - Present </Typography>
+                   <Typography variant="subtitle2">October 2019 - Present</Typography>
                 }
                 action={
                   <Button href="https://github.com/kkevsterrr/geneva">
@@ -32,7 +32,7 @@ const Experience = () => {
               />
               <CardContent style={{marginTop: '-3%'}}>
                 <Typography>
-                  Geneva utilizes genetic algorithms and user-written plugins to automatically 
+                  Previously, I was a researcher and developer at Geneva. Geneva utilizes genetic algorithms and user-written plugins to automatically 
                   detect and evade packet-level internet censorship. Using this engine the team at Geneva has 
                   been able to make some groundbreaking work into the field of internet privacy and censorship. 
                 </Typography>
