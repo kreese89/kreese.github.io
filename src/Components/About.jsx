@@ -25,8 +25,8 @@ const About = () => {
               Kyle Reese  
             </Typography>
             <Typography variant="h6" style={{marginTop: '15px'}}>
-              Hey there! I'm Kyle and I'm a Full Stack Software Engineer at Accenture 
-              currently working on the Facebook client. Before that, I was an undergrad student at
+              Hey there! I'm Kyle and I'm a Privacy Engineer at Meta. Previously, I was doing full-stack Software Engineering at Meta as a contingent worker through Accenture.
+              Before that, I was an undergrad student at
               the UMD, where I studied Math and Computer Science.
             </Typography>
             <Typography variant="h6" style={{marginTop: '15px'}}>
