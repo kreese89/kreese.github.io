@@ -35,7 +35,7 @@ const Experience = () => {
                   During my time there I was able to lead several detection and prevention efforts of privacy and security vulnerabilities. For instance,
                   I owned the design and development of an automated crashdump exploitability analysis system across the Meta family of apps that analayzed millions of 
                   daily crashes for exploitability signal. Using this system, we were able to identify in-the-wild exploit attempts of Meta apps, and turn
-                  those findings into changes in our codebase.
+                  those findings into changes in our codebase, making both our systems and our users safer.
                 </Typography>
                 {/* <Typography>
                   We collaborated cross-functionally with investigatory, legal, and product teams to ensure incidents are properly diagnosed, mitigated, and remediated. 
