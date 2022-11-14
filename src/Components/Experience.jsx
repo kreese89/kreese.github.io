@@ -22,24 +22,25 @@ const Experience = () => {
                   </Typography>
                 }
                 subheader={
-                   <Typography variant="subtitle2">February 2022 - Present</Typography>
+                   <Typography variant="subtitle2">February 2022 - November 2023</Typography>
                 }
               />
               <CardContent style={{marginTop: '-3%'}}>
                 <Typography>
-                  I'm currently working as a Privacy Engineer at Meta, on the Privacy Incident Response Engineering team (PIRE).
-                  Our goal is to provide high-quality engineering support to critical privacy incidents within the company, as well as to build
+                  My most recent role was as a Privacy Engineer at Meta, on the Privacy Incident Response Engineering team (PIRE).
+                  Our goal was to provide high-quality engineering support to critical privacy incidents within the company, as well as to build
                   the detection and prevention frameworks to ensure we don't see the same incident twice.
-
                 </Typography>
                 <Typography>
-                  We work across the various Meta tech stacks on our team. Most of our development occurrs in Hack + Javascript + React + Relay,
-                  although depending on the project we will work in other stacks as well (e.g C++, Python, etc.).
+                  During my time there I was able to lead several detection and prevention efforts of privacy and security vulnerabilities. For instance,
+                  I owned the design and development of an automated crashdump exploitability analysis system across the Meta family of apps that analayzed millions of 
+                  daily crashes for exploitability signal. Using this system, we were able to identify in-the-wild exploit attempts of Meta apps, and turn
+                  those findings into changes in our codebase.
                 </Typography>
-                <Typography>
-                  We collaborate cross-functionally with investigatory, legal, and product teams to ensure incidents are properly diagnosed, mitigated, and remediated. 
-                  We engineer solutions that resolve privacy issues while ensuring the underlying product's scalability and effectiveness are maintained.
-                </Typography>
+                {/* <Typography>
+                  We collaborated cross-functionally with investigatory, legal, and product teams to ensure incidents are properly diagnosed, mitigated, and remediated. 
+                  We engineered solutions that resolve privacy issues while ensuring the underlying product's scalability and effectiveness are maintained.
+                </Typography> */}
               </CardContent>
           </Grid>
           <Grid item xs component={Card}>
