@@ -22,7 +22,7 @@ const Experience = () => {
                   </Typography>
                 }
                 subheader={
-                   <Typography variant="subtitle2">February 2022 - November 2023</Typography>
+                   <Typography variant="subtitle2">February 2022 - November 2022</Typography>
                 }
               />
               <CardContent style={{marginTop: '-3%'}}>
